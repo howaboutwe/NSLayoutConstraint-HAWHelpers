@@ -36,8 +36,16 @@
     return [self attrOfChild:child toSameAttrOfParent:parent attr:NSLayoutAttributeCenterX constant:0.0];
 }
 
++ (NSLayoutConstraint*)centerXOfChild:(UIView*)child toCenterXOfParent:(UIView*)parent withFixedMargin:(CGFloat)margin {
+    return [self attrOfChild:child toSameAttrOfParent:parent attr:NSLayoutAttributeCenterX constant:margin];
+}
+
 + (NSLayoutConstraint*)centerYOfChild:(UIView*)child toCenterYOfParent:(UIView*)parent {
     return [self attrOfChild:child toSameAttrOfParent:parent attr:NSLayoutAttributeCenterY constant:0.0];
+}
+
++ (NSLayoutConstraint*)centerYOfChild:(UIView*)child toCenterYOfParent:(UIView*)parent withFixedMargin:(CGFloat)margin {
+    return [self attrOfChild:child toSameAttrOfParent:parent attr:NSLayoutAttributeCenterY constant:margin];
 }
 
 + (NSArray*)centerOfChild:(UIView*)child toCenterOfParent:(UIView*)parent {

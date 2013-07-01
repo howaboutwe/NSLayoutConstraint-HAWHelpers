@@ -12,7 +12,9 @@
 
 // child-parent constraints
 + (NSLayoutConstraint*)centerXOfChild:(UIView*)child toCenterXOfParent:(UIView*)parent;
++ (NSLayoutConstraint*)centerXOfChild:(UIView*)child toCenterXOfParent:(UIView*)parent withFixedMargin:(CGFloat)margin;
 + (NSLayoutConstraint*)centerYOfChild:(UIView*)child toCenterYOfParent:(UIView*)parent;
++ (NSLayoutConstraint*)centerYOfChild:(UIView*)child toCenterYOfParent:(UIView*)parent withFixedMargin:(CGFloat)margin;
 + (NSArray*)centerOfChild:(UIView*)child toCenterOfParent:(UIView*)parent;
 
 + (NSLayoutConstraint*)topOfChild:(UIView*)child toTopOfParent:(UIView*)parent;

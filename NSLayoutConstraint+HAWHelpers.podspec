@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "NSLayoutConstraint+HAWHelpers"
   s.platform     = :ios
-  s.version      = "0.5"
+  s.version      = "0.5.1"
   s.summary      = "NSLayoutConstraint category that adds clearly-named convenience methods for some commonly-used constraints."
   s.homepage     = "https://github.com/howaboutwe/NSLayoutConstraint-HAWHelpers.git"
   s.license      = { :type => "Apache License 2.0", :text => "Apache License 2.0" }
