@@ -26,6 +26,7 @@
 + (NSLayoutConstraint*)leftOfChild:(UIView*)child toLeftOfParent:(UIView*)parent withFixedMargin:(CGFloat)margin;
 + (NSLayoutConstraint*)rightOfChild:(UIView*)child toRightOfParent:(UIView*)parent withFixedMargin:(CGFloat)margin;
 + (NSArray*)sidesOfChild:(UIView*)child toSidesOfParent:(UIView*)parent;
++ (NSArray*)sidesOfChild:(UIView*)child toSidesOfParent:(UIView*)parent margin:(CGFloat)margin;
 
 + (NSArray*)extentOfChild:(UIView*)child toExtentOfParent:(UIView*)parent;
 

@@ -79,8 +79,12 @@
 }
 
 + (NSArray*)sidesOfChild:(UIView*)child toSidesOfParent:(UIView*)parent {
-    NSLayoutConstraint *lConstraint = [self leftOfChild:child toLeftOfParent:parent withFixedMargin:0.0];
-    NSLayoutConstraint *rConstraint = [self rightOfChild:child toRightOfParent:parent withFixedMargin:0.0];
+    return [self sidesOfChild:child toSidesOfParent:parent margin:0.0];
+}
+
++ (NSArray*)sidesOfChild:(UIView*)child toSidesOfParent:(UIView*)parent margin:(CGFloat)margin {
+    NSLayoutConstraint *lConstraint = [self leftOfChild:child toLeftOfParent:parent withFixedMargin:margin];
+    NSLayoutConstraint *rConstraint = [self rightOfChild:child toRightOfParent:parent withFixedMargin:-(margin)];
     return @[lConstraint, rConstraint];
 }
 
