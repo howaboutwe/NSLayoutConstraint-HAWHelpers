@@ -18,4 +18,4 @@ Written by Brad Heintz and James Paolantonio for [HowAboutWe](http://howaboutwe.
 
 The method signatures should tell you pretty much everything you need to know about how to use them. For information on Auto Layout generally, see [Apple's docs on the topic](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/AutolayoutPG/Articles/Introduction.html#//apple_ref/doc/uid/TP40010853).
 
-Note that the selection of methods is deliberately *not* comprehensive - it just gives you a fast way to do the 
+Note that the selection of methods is deliberately *not* comprehensive - it just gives you a fast way to do the basics.
